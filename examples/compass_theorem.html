@@ -1,0 +1,30 @@
+<html><body>
+                    <h1>Source:</h1><pre>1	to construct main circle c given point A, point B, point C do
+2	  define circle[A, B] ∩1 circle[B, A] as D 
+3	  define line[D, B] as r
+4	  define line[D, A] as s
+5	  define r ∩1 circle[B, C] as E
+6	  define s ∩0 circle[D, E] as F
+7	  define circle[A, F] as c
+8	  show
+9	done</pre>
+                    <h1>Input:</h1><pre>[Point2D(0, 0), Point2D(100, 0), Point2D(150, 20)]</pre>
+                    <h1>Output:</h1><pre>[CirclePoint(Point2D(0, 0), Point2D(-sqrt(3)*(-50*sqrt(3) + 5*sqrt(3)*sqrt(20*sqrt(29) + 129))/3, -50*sqrt(3) + 5*sqrt(3)*sqrt(20*sqrt(29) + 129)))]</pre>
+                    <h1>Show:</h1><fieldset style="border: 1pt dashed black; margin: .5em 0;"><legend>main</legend><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="244.62197768561404" height="168.54502613974668" viewBox="-78.31384583990645 -65.08798314732815 244.62197768561404 168.54502613974668">
+<defs>
+</defs>
+<rect x="-78.31384583990645" y="-65.08798314732815" width="244.62197768561404" height="168.54502613974668" fill="lightyellow" />
+<circle cx="0.0" cy="-0.0" r="3" fill="red" />
+<circle cx="100.0" cy="-0.0" r="3" fill="red" />
+<circle cx="150.0" cy="-20.0" r="3" fill="red" />
+<circle cx="50.0" cy="86.60254037844386" r="3" fill="black" />
+<path d="M140.82221513153158,-70.70615068531971 L40.269048378764474,103.45704299241854" stroke="black" />
+<path d="M59.730951621235526,103.45704299241854 L-40.82221513153158,-70.70615068531971" stroke="black" />
+<circle cx="126.92582403567252" cy="-46.636895265444075" r="3" fill="black" />
+<circle cx="-26.92582403567252" cy="-46.636895265444075" r="3" fill="black" />
+<circle cx="0.0" cy="-0.0" r="53.85164807134504" fill="transparent" stroke="blue" />
+</svg></div></fieldset>
+                    </body></html>
+                

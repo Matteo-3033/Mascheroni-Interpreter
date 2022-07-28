@@ -1,0 +1,61 @@
+<html><body>
+                    <h1>Source:</h1><pre>1	to construct nthpoint point P_n given point P_0, point P_1 do
+2	  define ray[P_(n-2), P_(n-1)] ∩1 circle[P_(n-1), P_(n-2)] as P_n 
+3	done
+4	
+5	to construct nthsegment segment s_n given segment s_0, point V, point H do
+6	  define segment[V_(10-n), H_n] as s_n
+7	done
+8	
+9	to construct nthintersect point I_n given point I_0, segment s do
+10	  define s_(n-1) ∩ s_n as I_n
+11	done
+12	
+13	to construct main given point O, point V, point H do
+14	
+15	  with nthpoint(O, V) as Vi and nthpoint(O, H) as Hi and 
+16	       nthsegment(segment[O, Vi_10], Vi, Hi) as ti and
+17	       nthintersect(O, ti) as Ii do
+18	
+19	      define ti as tt upto 10
+20	      define Ii as ii upto 10
+21	
+22	  done
+23	  show
+24	done</pre>
+                    <h1>Input:</h1><pre>[Point2D(93, 62), Point2D(94, 96), Point2D(67, 74)]</pre>
+                    
+                    <h1>Show:</h1><fieldset style="border: 1pt dashed black; margin: .5em 0;"><legend>main</legend><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="324.0" height="408.0" viewBox="-199.4 -429.2 324.0 408.0">
+<defs>
+</defs>
+<rect x="-199.4" y="-429.2" width="324.0" height="408.0" fill="lightyellow" />
+<circle cx="93.0" cy="-62.0" r="3" fill="red" />
+<circle cx="94.0" cy="-96.0" r="3" fill="red" />
+<circle cx="67.0" cy="-74.0" r="3" fill="red" />
+<path d="M94.0,-96.0 L-141.0,-170.0" stroke="black" />
+<path d="M100.0,-300.0 L15.0,-98.0" stroke="black" />
+<circle cx="83.0" cy="-259.6" r="3" fill="black" />
+<circle cx="95.0" cy="-309.2" r="3" fill="black" />
+<path d="M98.0,-232.0 L-37.0,-122.0" stroke="black" />
+<path d="M96.0,-164.0 L-89.0,-146.0" stroke="black" />
+<path d="M102.0,-368.0 L67.0,-74.0" stroke="black" />
+<circle cx="66.0" cy="-219.2" r="3" fill="black" />
+<path d="M99.0,-266.0 L-11.0,-110.0" stroke="black" />
+<path d="M97.0,-198.0 L-63.0,-134.0" stroke="black" />
+<path d="M101.0,-334.0 L41.0,-86.0" stroke="black" />
+<circle cx="17.0" cy="-166.0" r="3" fill="black" />
+<circle cx="-94.0" cy="-155.2" r="3" fill="black" />
+<circle cx="44.0" cy="-188.0" r="3" fill="black" />
+<path d="M93.0,-62.0 L103.0,-402.0" stroke="black" />
+<circle cx="-15.0" cy="-153.2" r="3" fill="black" />
+<circle cx="-141.0" cy="-170.0" r="3" fill="black" />
+<circle cx="93.0" cy="-62.0" r="3" fill="black" />
+<circle cx="-52.0" cy="-149.6" r="3" fill="black" />
+<path d="M95.0,-130.0 L-115.0,-158.0" stroke="black" />
+<path d="M93.0,-62.0 L-167.0,-182.0" stroke="black" />
+<circle cx="102.0" cy="-368.0" r="3" fill="black" />
+</svg></div></fieldset>
+                    </body></html>
+                

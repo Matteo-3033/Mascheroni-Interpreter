@@ -1,0 +1,46 @@
+<html><body>
+                    <h1>Source:</h1><pre>1	approximate
+2	to construct transport circle c given point A, point B, point C do
+3	  with circle[A, B] ∩1 circle[B, A] as D and
+4	       line[D, B] as r and line[D, A] as s and
+5	       r ∩1 circle[B, C] as E and
+6	       s ∩0 circle[D, E] as F do
+7	    define circle[A, F] as c
+8	  done
+9	  show
+10	done
+11	
+12	to construct main point Q, line p given point A, point B, point P do
+13	  with circle[A, P] ∩1 line[A, B] as R and
+14	       transport(A, P, R) as c do
+15	  define circle[P, A] ∩1 c as Q 
+16	  define line[P, Q] as p
+17	  done
+18	  show
+19	done</pre>
+                    <h1>Input:</h1><pre>[Point2D(0, 0), Point2D(100, 0), Point2D(150, 70)]</pre>
+                    <h1>Output:</h1><pre>[Point2D(-31058907144937/2000000000000, 70), Line2D(Point2D(150, 70), Point2D(-31058907144937/2000000000000, 70))]</pre>
+                    <h1>Show:</h1><fieldset style="border: 1pt dashed black; margin: .5em 0;"><legend>main</legend><fieldset style="border: 1pt dashed black; margin: .5em 0;"><legend>transport</legend><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="284.6776365431162" height="172.0845845123092" viewBox="-100.1696738677738 -83.1742158476161 284.6776365431162 172.0845845123092">
+<defs>
+</defs>
+<rect x="-100.1696738677738" y="-83.1742158476161" width="284.6776365431162" height="172.0845845123092" fill="lightyellow" />
+<circle cx="0.0" cy="-0.0" r="3" fill="red" />
+<circle cx="150.0" cy="-70.0" r="3" fill="red" />
+<circle cx="165.529453572468" cy="-0.0" r="3" fill="red" />
+<circle cx="0.0" cy="-0.0" r="71.70191021346217" fill="transparent" stroke="blue" />
+</svg></div></fieldset><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="198.63534428696218" height="84.0" viewBox="-35.39298800116472 -75.6 198.63534428696218 84.0">
+<defs>
+</defs>
+<rect x="-35.39298800116472" y="-75.6" width="198.63534428696218" height="84.0" fill="lightyellow" />
+<circle cx="0.0" cy="-0.0" r="3" fill="red" />
+<circle cx="100.0" cy="-0.0" r="3" fill="red" />
+<circle cx="150.0" cy="-70.0" r="3" fill="red" />
+<circle cx="-15.5294535724685" cy="-70.0" r="3" fill="blue" />
+<path d="M-35.3929880011647,-70.0 L169.863534428696,-70.0" stroke="blue" />
+</svg></div></fieldset>
+                    </body></html>
+                
