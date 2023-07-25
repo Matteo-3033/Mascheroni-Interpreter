@@ -1,4 +1,6 @@
-# Manzoni Matteo
+# Mascheroni language interpreter
+
+Mascheroni language interpreter developed as a project for the course "Linguaggi e traduttori" at the Milan Statale University. The Mascheroni language is a toy-language specifically created for the project. However, it can represent all the geometric constructions that can be drawn using only a ruler and compass. A complete description of the language can be found [here](https://htmlpreview.github.io/?https://github.com/let-unimi/progetti/blob/master/03-Mascheroni/Testo.html) in Italian.
 
 ## Specifiche discusse col docente:
 
@@ -10,7 +12,7 @@
 
 La grammatica, nella directory [Grammatica](Grammatica), permette la generazione di codice nel [linguaggio di Mascheroni](https://htmlpreview.github.io/?https://github.com/let-unimi/progetti/blob/master/03-Mascheroni/Testo.html).<br>
 Rispetto al linguaggio originale si evidenziano le seguenti differenze:
-- Per problemi di encoding per le operazioni di intersezione al posto del carattere `∩` viene utilizzato `^`; non è tuttavia necessario sostituire manualmente la sostituzione nel codice poiché se ne occupa direttamente l'interprete;
+- Per problemi di encoding per le operazioni di intersezione al posto del carattere `∩` viene utilizzato `^`; non è tuttavia necessario eseguire manualmente la sostituzione nel codice poiché se ne occupa direttamente l'interprete;
 - Una variante del passo show, `showLabel`, permette la visualizzazione delle etichette dei punti;
 - Precedere il primo construct definito con la parola `approximate` permette di approssimare i calcoli delle intersezioni per velocizzare l'esecuzione del codice.
 - Si assume che tutti i construct accettino almeno un parametro poiché altrimenti non avrebbero enti da cui partire nella loro computazione;
